@@ -160,6 +160,7 @@ footer {
     display: flex;
     flex-direction: row;
     background: #F2F2F2;
+    width: 1340px;
     height: 163px;
     /*Le footer reste en bas de la page*/
     position: absolute;
@@ -176,6 +177,145 @@ footer ul {
     bottom: 15px;
     right: 20px;
 }
+
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 0px;
+}
+.Titreduformulaire {
+    margin-top: 40px;
+    gap: 8px;
+}
+
+.Titreduformulaire p {
+    position: relative;
+    bottom: 15px;
+}
+
+
+.Rechercheville {
+    display: flex;
+    flex-direction: row;
+    width: 377px;
+    height: 49px; 
+    background: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.Rechercheville input {
+    font-size: 18px;
+}
+
+.Filtres {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+.bouton {
+    border: #d9d9d9 solid 2px;
+    border-radius: 25px;
+    height: 50px;
+    width: 173px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 19px;
+    font-weight: 700;
+}
+
+.bouton i{
+    position: relative;
+    top: 17px;
+}
+
+.bouton:hover {
+    background-color: #deebff;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 1em;
+}
+
+.information p {
+    position: relative;
+    top: 8px;
+}
+
+.fa-location-dot {
+    position: relative;
+    left: 18px;
+    top: 15px;
+    width: 14px;
+    height: 18px;
+}
+
+.fondi {
+    width: 50px;
+    height: 49px;
+    background: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.champdesaisi {
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: #F2F2F2 1px solid;
+    width: 195px;
+}
+
+.boutonrecherche {
+    background: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 0px 15px 15px 0px;
+    color: white;
+    font-weight: 700;
+    gap: 10px;
+    padding: 15px 16px;
+    max-width: 132px;
+    max-height: 49px;
+}
+
+.boutonrecherche:hover {
+    color: #0065FC;
+    background-color: white;
+}
+
+/*.information {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}*/
+
+.fa-info {
+    position: relative;
+    height: 5px;
+    width: 2px;
+    top: 2px;
+    left: 9px;
+    color: #0065FC;
+}
+.cercle {
+    width: 24px;
+    height:24px;
+    border:1px solid #d9d9d9; 
+    border-radius:50%;
+    position: relative;
+    top: 20px;
+  }
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
