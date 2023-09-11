@@ -161,14 +161,17 @@ footer {
     flex-direction: row;
     background: #F2F2F2;
     height: 163px;
+    /*Le footer reste en bas de la page*/
     position: absolute;
     bottom: 0;
 }
 
 footer ul {
+    /*taille de chacun des blocs*/
     width: 446.67px;
     height: 163px;
     gap: 15px;
+    /*Position de chacun des blocs dans le footer*/
     position: relative;
     bottom: 15px;
     right: 20px;
