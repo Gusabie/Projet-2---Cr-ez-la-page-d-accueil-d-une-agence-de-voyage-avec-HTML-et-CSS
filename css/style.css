@@ -175,6 +175,10 @@ header img {
     background-color: #deebff;
 }
 
+.fa-person {
+    font-size: 22px;
+}
+
 .information {
     width: 100%;
     height: 24px;
@@ -242,19 +246,15 @@ header img {
 }
 
 .fa-info {
-    position: relative;
-    width: 4px;
-    height: 10px;
-    top: 2px;
-    left: 9px;
-    color: #0065FC;
-}
-.cercle {
     width: 24px;
     height:24px;
     border:1px solid #d9d9d9; 
     border-radius:50%;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 
 /****** Hebergements And Populaires ***********/
@@ -357,6 +357,7 @@ header img {
     justify-content: space-between;
     align-items: center;
 }
+
 
 .populaires-cards .card {
     display: flex;
@@ -462,7 +463,6 @@ footer {
 footer ul {
     /*taille de chacun des blocs*/
     width: 100%;
-    height: 163px;
     gap: 15px;
     /*Position de chacun des blocs dans le footer*/
     position: relative;
@@ -493,12 +493,16 @@ footer ul {
         width: 100%;
         margin-top: 50px;
     }
-/* 
-    .populaires-cards {
+    .populaires-cards{
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-    } */
+        gap: 20px;
+    }
+
+    .populaires-cards .card {
+        width: 100%
+    }
+
 
     .populaires-cards a {
         width: 30%;
@@ -511,10 +515,14 @@ footer ul {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    .populaires-cards .card {
-        flex-direction: column;
-    }
 
+    
+    .cardactivite {
+        height: 270px;
+    }
+    .cardactivite img {
+        height: 200px;
+    }
 
 }
 
@@ -585,13 +593,21 @@ footer ul {
         margin-top: 0;
     }
     .populaires-cards{
+    flex-direction: column;
+    margin-top: 15px;
+ 
+    }
 
-flex-direction: column;
+    .populaires-cards a {
+        width: 100%;
     }
     .populaires-cards .card {
         width: 100%;
         flex-direction: row;
+        margin: 0;
     }
+
+
     header img{
         padding: 50px;
         margin: auto;
@@ -643,33 +659,29 @@ flex-direction: column;
 
    .bouton {
     width: 47%;
+    justify-content: start;
    }
-
+   
 .hebergements-cards {
     gap: 15px;
     flex-direction: column;
+    margin-bottom: 15px;
+    
 }
 
 .hebergements-cards .card {
     min-width: 100%;
     height: 200px;
     border-radius: 20px;
-
-
 }
 
-/* .hebergements-cards .card-content{
-    position: relative;
-    gap: 0;
-    gap: 8px;
-} */
 .hebergements-cards img {
     width: 100%;
     height: 7em;
     border-radius: 20px 20px 0px 0px;
     object-position: 50% 65%;
-
 }
+
 
 .activites {
     padding: 30px;
@@ -700,5 +712,4 @@ flex-direction: column;
     max-width: 767.98px;
 }
 
-    /* ... */
 }
