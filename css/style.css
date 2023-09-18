@@ -488,11 +488,6 @@ li span {
     width: 100%;
   }
 
-  .hebergements-cards{
-   justify-content: space-around;
-   gap: 10px;
-  }
-
   .populaires {
     width: 100%;
     margin-top: 50px;
@@ -500,10 +495,11 @@ li span {
   .populaires-cards {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .populaires-cards a {
-    width: 32%;
+    width: 100%;
   }
 
   .populaires-cards .card-subtitle {
