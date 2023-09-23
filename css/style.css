@@ -267,14 +267,15 @@ header img {
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
+  display: flex;
+  flex-direction: column;
 }
 
 .hebergements-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 33px 0;
-  gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 33px 0;
 }
 
 .hebergements-title {
@@ -284,9 +285,7 @@ header img {
 }
 
 .hebergements-cards .card {
-
-  width: 250.33px;
-  height: 207.25px;
+  max-width: 243px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -295,7 +294,7 @@ header img {
 }
 
 .hebergements-cards img {
-  width: 100%;
+    width: 100%;
   height: 7.5em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -644,9 +643,10 @@ li span {
   }
 
   .hebergements-cards {
-    gap: 15px;
+/*     gap: 15px;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 15px; */
+        grid-template-columns: 1fr;
   }
 
   .hebergements-cards .card {
