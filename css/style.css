@@ -275,7 +275,7 @@ header img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin: 33px 0;
+    margin: 33px 0; 
 }
 
 .hebergements-title {
